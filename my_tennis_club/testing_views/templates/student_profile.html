@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Student Profile{% endblock %}
+
+{% block content %}
+    {% for each_student in student%}
+        <h2>{{ each_student.name }}</h2>
+        <p>Age: {{each_student.age}}</p>
+        <p>Course : {{ each_student.course}}</p>
+    {% endfor %}
+
+{% endblock %}

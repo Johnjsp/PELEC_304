@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Educational Background</title>
+
+</head>
+<body>
+    <h2>Enter your educational Background</h2>
+    <form method="POST" novalidate>
+        {% csrf_token %}
+        {{ form as.p }}
+        <button type = "submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
